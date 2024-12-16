@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#fundo{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/indexbackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    filter: brightness(70%);
+    position: absolute;
+    border: 1px solid #ff0f0f;
+}
+
+#header{
+    width: 100vw;
+    height: 5rem;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#vinheta{
+    position: absolute;
+    width: 100vw;
+    height: 5rem;
+    background-image: url(/assets/vinheta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+img{
+    height: 2.5rem;
+    margin-left: 7rem;
+    z-index: 1;
+}
+
+#buttonLanguage{
+        background-color:transparent;
+        height: 1.7rem;
+        width:8rem;
+        border-radius: 5px;
+        border: 1px solid white;
+        transition: 0.8s;
+        margin-left: 62%;
+        z-index: 1;
+}
+
+#buttonLanguage:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+    cursor:pointer;
+}
+
+#login{
+    background-color: red;
+    height: 1.7rem;
+    width:4.3rem;
+    border-radius: 5px;
+    border: none;
+    transition: 0.8s;
+    margin-left: 1rem;
+    z-index: 1;
+}
+
+#login:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+    cursor:pointer;
+}
+
+#container-index{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+}
+
+#containerForNewsletter{
+    width: 40vw;
+    height: auto;
+    margin-top: 6rem;
+    border: 1px solid rgb(115, 36, 36);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containerForNewsletter h1{
+    font-family: Arial;
+    font-weight:900;
+    font-size: 3rem;
+    text-justify: center;
+    text-align: center;
+    line-height: 3.7rem;
+}
+
+#containerForNewsletter h2{
+    font-family: Arial;
+    font-size: 1.3rem;
+    text-justify: center;
+    text-align: center;
+    line-height: 3.7rem;
+}
+
+#containerForNewsletter h3{
+    font-family: Arial;
+    font-size: 0.9rem;
+    text-justify: center;
+    text-align: center;
+    line-height: 3.7rem;
+}
+
+#emailNewsletter{
+    height: 2.7rem;
+    width: 20rem;
+    background-color:rgba(33, 33, 33, 0.5);
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 5px;
+}
+
+#emailNewsletter::placeholder{
+    font-weight: bold;
+    padding-left: 1rem;
+    color: #bababa;
+}
+
+#newsletterSubscribe{
+    background-color: red;
+    height: 2.7rem;
+    width: 10rem;
+    border-radius: 5px;
+    border: none;
+    transition: 0.8s;
+}
+
+#newsletterSubscribe:hover{
+        opacity: 0.8;
+        transition: 0.2s;
+        cursor:pointer;
+    }
