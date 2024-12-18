@@ -5,22 +5,14 @@
     color: white;
 }
 
-#fundo{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(/assets/indexbackground.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    filter: brightness(70%);
-    position: absolute;
-    border: 1px solid #ff0f0f;
+body{
+    background-color: black;
 }
+
 
 #header{
     width: 100vw;
     height: 5rem;
-    border: 1px solid white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,8 +20,8 @@
 
 #vinheta{
     position: absolute;
-    width: 100vw;
-    height: 5rem;
+    width: 100%;
+    height:20rem;
     background-image: url(/assets/vinheta.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -77,19 +69,23 @@ img{
 }
 
 #container-index{
-    width: auto;
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid white;
+    width: 100vw;
+    height: 90vh;
+    background-image: url(/assets/indexbackground.png);
+    background-position:center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-items: center;
 }
 
 #containerForNewsletter{
     width: 40vw;
     height: auto;
-    margin-top: 6rem;
-    border: 1px solid rgb(115, 36, 36);
+    margin-top: 3rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -107,7 +103,7 @@ img{
 
 #containerForNewsletter h2{
     font-family: Arial;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-justify: center;
     text-align: center;
     line-height: 3.7rem;
@@ -115,7 +111,7 @@ img{
 
 #containerForNewsletter h3{
     font-family: Arial;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-justify: center;
     text-align: center;
     line-height: 3.7rem;
@@ -124,7 +120,8 @@ img{
 #emailNewsletter{
     height: 2.7rem;
     width: 20rem;
-    background-color:rgba(33, 33, 33, 0.5);
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);;
     border: 1px solid rgb(92, 92, 92);
     border-radius: 5px;
 }
@@ -142,6 +139,8 @@ img{
     border-radius: 5px;
     border: none;
     transition: 0.8s;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 #newsletterSubscribe:hover{
@@ -149,3 +148,87 @@ img{
         transition: 0.2s;
         cursor:pointer;
     }
+
+#backgroundSaibaMais{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+#backgroundSaibaMais img{
+    margin: auto;
+    width: 50vw;
+    height: 50px;
+    width: 100vw;
+}
+
+#saibaMais {
+    width: 75vw;
+    height: 3.5rem;
+    margin: auto;
+    border-radius: 13px;
+    background-image: url(/assets/backgroundForPopcornSection.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 5.5rem;
+    padding-top: 0.8rem;
+    opacity: 0.8;
+    scale: 1;
+    transition: 0.4s;
+}
+
+#saibaMais h4, h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#saibaMais:hover{
+    opacity: 1;
+    transition: 0.4s;
+    scale: 1.03;
+}
+
+#buttonSaibaMais{
+    background-color: gray;
+    color: whitesmoke;
+    height: 1.7rem;
+    width: 5rem;
+    border-radius: 5px;
+    border: none;
+    margin-left: 52rem;
+    position: absolute;
+    margin-top: -1.75rem;
+    transition: 0.3s;
+}
+
+#buttonSaibaMais:hover{
+    cursor:pointer;
+    opacity:0.8;
+    transition:0.2s;
+}
+
+#restanteSite{
+    grid-row: 3;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    height: 1000px;
+    background-color: black;
+    margin-top: 0;
+}
+
+#containerSeletores{
+    padding: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.seletor{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    height: 2.5rem;
+    width: 6rem;
+}

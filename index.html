@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Screen</title>
+    <title>Netflix Clone Project</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <div id="fundo"></div>
-
+<div id="fundo">
     <div id="container-index">
-
         <header id="header">
             <div id="vinheta"></div>
             <img src="/assets/Netflix_2015_logo.svg" alt="Logomarca Netflix">
@@ -21,29 +19,51 @@
         </header>
 
         <div id="containerForNewsletter">
+
             <h1 id="titlenews">Filmes, séries e muito mais, sem limites</h1>
             <h2>A partir de R$ 20,90. Cancele quando quiser.</h2>
             <h3>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+            
             <div id="containerForVamosLa">
                 <label for="email"></label>
                 <input type="email" id="emailNewsletter" name="email" placeholder="E-mail">
                 <button id="newsletterSubscribe">Vamos lá ></button>
             </div>
+            
         </div>
 
-        <div id="popcorn">
-            <div id="saibaMais">
-                <span>A Netflix que você adora por apenas R$ 20,90.</span>
-                <span>Aproveite nossa opção mais acessível, o plano com anúncios.</span>
-            </div>
+    </div>
+    <div id="backgroundSaibaMais">
+        <img src="/assets/popcornSection.png">
+    </div>
+        <div id="saibaMais">
+            <h4>A Netflix que você adora por apenas R$ 20,90.</h4>
+            <h5>Aproveite nossa opção mais acessível, o plano com anúncios.</h5>
+            <button id="buttonSaibaMais">Saiba Mais</button>
         </div>
+
+    <div id="restanteSite">
 
         <div id="emAlta">
-            // Aqui irei colocar o carroussel, que deverá ter 2 caixas de classificação ( FILME/SERIE - LOCALIDADE)
+            <h2>Em alta</h2>
+
+            <div id="containerSeletores">
+                <select class="seletor" id="idiomas" name="idiomas">
+                    <option value="pt">Português</option>
+                    <option value="en">Inglês</option>
+                </select>
+
+                <select class="seletor" id="genero" name="genero">
+                    <option value="serie">Séries</option>
+                    <option value="filme">Filme</option>
+                </select>
+             </div>
+
         </div>
 
-        <div id="maisMotivosParaAssinar">
+        
 
+        <div id="maisMotivosParaAssinar">
             <div class="maisMotivos">
                 <h1>Aproveite na TV</h1>
                 <h2>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</h2>
@@ -71,7 +91,8 @@
 
         </div>
 
-    </div>
+        </div>
+        </div>
     
 </body>
 </html>
