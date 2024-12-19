@@ -212,16 +212,18 @@ img{
 #restanteSite{
     grid-row: 3;
     padding-top: 5rem;
-    padding-left: 10rem;
     height: 1000px;
     background-color: black;
     margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #containerSeletores{
-    padding: 1rem;
     display: flex;
     gap: 1.5rem;
+    margin-top: 1rem;
 }
 .seletor{
     background-color: black;
@@ -231,4 +233,102 @@ img{
     border-radius:5px;
     height: 2.5rem;
     width: 6rem;
+}
+
+#top10{
+    margin-top: 1rem;
+    width: 80vw;
+    height: 16rem;
+    overflow-x: scroll;
+    display: flex;
+    background-color: black;
+    gap: 1rem;
+}
+
+.topmovie{
+    height: 90%;
+    width: 11rem;
+    flex-shrink: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+}
+
+#movie1{
+    background-image: url(/assets/top10movies/1.png);
+}
+#movie2{
+    background-image: url(/assets/top10movies/2.png);
+}
+#movie3{
+    background-image: url(/assets/top10movies/3.png);
+}
+#movie4{
+    background-image: url(/assets/top10movies/4.png);
+}
+#movie5{
+    background-image: url(/assets/top10movies/5.png);
+}
+#movie6{
+    background-image: url(/assets/top10movies/6.png);
+}
+#movie7{
+    background-image: url(/assets/top10movies/7.png);
+}
+#movie8{
+    background-image: url(/assets/top10movies/8.png);
+}
+#movie9{
+    background-image: url(/assets/top10movies/9.png);
+}
+#movie10{
+    background-image: url(/assets/top10movies/10.png);
+}
+
+#maisMotivosParaAssinar{
+    height: auto;
+    width: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+#maisMotivosParaAssinar h2{
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+#containerForMotivos{
+    width: auto;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+}
+
+#motivo1{
+    background-image: url(/assets/mais-motivos/aproveite.png);
+}
+#motivo2{
+    background-image: url(/assets/mais-motivos/baixe.png);
+}
+#motivo3{
+    background-image: url(/assets/mais-motivos/olnde\ quiser.png);
+}
+#motivo4{
+    background-image: url(/assets/mais-motivos/for\ kids.png);
+}
+
+.motivos{
+    height: 100%;
+    width: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
 }
